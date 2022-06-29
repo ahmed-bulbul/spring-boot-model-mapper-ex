@@ -31,10 +31,14 @@ public class BookServiceImpl implements BookService {
     public ResponseEntity<?> getBookById(Long id) {
         // model mapper by Book to bookCommentDto
         Optional<Book> book = bookRepository.findById(id);
-        System.out.println(book.get().getTitle());
         // mapping book to bookCommentDto
-        BookCommentDto bookCommentDto = modelMapper.map(book.get(), BookCommentDto.class);
-        return new ResponseEntity<>(bookCommentDto, HttpStatus.OK);
+        if(book.isPresent()){
+            BookCommentDto bookCommentDto = modelMapper.map(book.get(), BookCommentDto.class);
+            return ResponseEntity.ok(bookCommentDto);
+        }else{
+            return ResponseEntity.ok("Book not found");
+        }
+
 
     }
 }
