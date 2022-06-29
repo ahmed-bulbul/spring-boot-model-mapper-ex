@@ -1,4 +1,5 @@
 # spring-boot-model-mapper-ex
+run the project first. Automatic create database[need to valid db credentials] and user,book,post,comment.
 post response
 http://localhost:8989/book/2
 ```
