@@ -1,5 +1,6 @@
 # spring-boot-model-mapper-ex
 run the project first. Automatic create database[need to valid db credentials] and user,book,post,comment.
+then just run the project and put url on browser or postman then you can show the output perfectly
 post response
 http://localhost:8989/book/2
 ```
