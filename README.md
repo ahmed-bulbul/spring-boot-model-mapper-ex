@@ -41,3 +41,10 @@ http://localhost:8989/book/2
   ]
 }
 ```
+best plugins intelij
+```
+1. Generate Allsetters
+2.Maven helper
+3.Codota
+4.GsonFormatPlus
+5.KeyPromoter X
